@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U Blog - Inicio</title>
+    <title>U Blog - Contacto</title>
 
     <link rel="stylesheet" href="/styles.css" />
 </head>
@@ -19,23 +19,39 @@
         </div>
           
         <nav class="header-nav">
-            <a href="/" class="selected">Inicio</a>
+            <a href="/">Inicio</a>
             <a href="/html.html">HTML5</a>
-            <a href="/css">CSS3</a>
-            <a href="/javascript">JavaScript</a>
-            <a href="/contacto">Contacto</a>
+            <a href="/css.html">CSS3</a>
+            <a href="/javascript.html">JavaScript</a>
+            <a href="/contacto.html" class="selected">Contacto</a>
         </nav>
     </header>
     
     <main class="container">
-        <h1>Inicio</h1>
-    
-        <ul>
-            <li>Nombre: Gustavo Andres</li>
-            <li>Apellidos: Valderrama Barbosa</li>
-            <li>Editor de Codigo: VS Code</li>
-            <li>Github: <a target="_blank" href="https://github.com/andresvalderrama">github.com/andresvalderrama</a></li>
-        </ul>
+        <h2>Contacto</h2>
+
+        <form class="contact-form">
+            <fieldset>
+                <label for="name">Nombres:</label>
+                <input required type="text" id="name">
+            </fieldset>
+            <fieldset>
+                <label for="lastname">Apellidos:</label>
+                <input required type="text" id="lastname">
+            </fieldset>
+            <fieldset>
+                <label for="birthday">Fecha de nacimiento:</label>
+                <input required type="date" id="birthday">
+            </fieldset>
+            <fieldset>
+                <label for="email">Correo electrónico:</label>
+                <input required type="email" id="email">
+            </fieldset>
+            <fieldset>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Limpiar formulario</button>
+            </fieldset>
+        </form>
     </main>
 
     <footer class="container footer">Fundacion Universitaria Internacional de la Rioja - Bogotá, 2022</footer>
